@@ -1,3 +1,7 @@
+// In this code, the bot listens for messages that start with `!kick` or `!ban`. If it receives a message that starts with `!kick`, it checks if the user who sent the message has the `KICK_ROLE` and if the bot has the `BAN_ROLE`. If both checks pass, it kicks the user mentioned in the message.
+// If the bot receives a message that starts with `!ban`, it follows the same process, but bans the mentioned user instead of kicking them.
+// Note that this is just an example and should be customized to fit your specific needs. For example, you may want to add additional checks or features to the bot.
+
 const Discord = require('discord.js');
 
 const client = new Discord.Client();
